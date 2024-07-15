@@ -4,9 +4,9 @@ import plotly.express as px
 from utils import logo
 from PIL import Image
 
-report_page = st.Page("pages/fin_dash.py", title="Financial Dashboard", icon="📊")
-watch_page = st.Page("pages/fin_watch.py", title="Watch List", icon="👁️")
-tutor_page = st.Page("pages/fin_tutor.py", title="Financial Tutorial", icon="📖")
+report_page = st.Page("fin_dash.py", title="Financial Dashboard", icon="📊")
+watch_page = st.Page("fin_watch.py", title="Watch List", icon="👁️")
+tutor_page = st.Page("fin_tutor.py", title="Financial Tutorial", icon="📖")
 
 pg = st.navigation([report_page, watch_page, tutor_page])
 st.set_page_config(page_title="Fin Fun", page_icon=":material/edit:")
@@ -23,7 +23,8 @@ def add_logo():
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: url("https://raw.githubusercontent.com/andfanilo/social-media-tutorials/master/20221130-extras/logo.png");
+                background-image: url("https://raw.githubusercontent.com/trongdang10/financial-streamlit-app/main/logo.png");
+                background-size: 60%;
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
